@@ -10,7 +10,7 @@ public class Book {
     public String getName() {
         return this.name;
     }
-    public int getYear() {
+    public int getYear()  {
         return this.year;
     }
     public void setYear(int year) {
