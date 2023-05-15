@@ -1,28 +1,26 @@
 public class Main {
     public static void printSeparator() {
-        System.out.println("====================");
+        System.out.println("=====================");
     }
 
     public static void main(String[] args) {
 
 
-        Author Bulgakov = new Author("Михаил","Булгаков");
+        Author bulgakov = new Author("Михаил","Булгаков");
         printSeparator();
-        System.out.println("Автор - " + Bulgakov.getName() + " " + Bulgakov.getSurname());
-        Book dogHeart = new Book("Собачье сердце", Bulgakov, 1925);
-        System.out.println("Название книги - " + dogHeart.getName());
+        System.out.println("Автор - " + bulgakov.getName() + " " + bulgakov.getSurname());
+        Book dogHeart = new Book("Собачье сердце", bulgakov, 1925);
+        System.out.println("Название книги - " + dogHeart.getName() );
         System.out.println("Год издания - " + dogHeart.getYear());
         printSeparator();
-        Author Gogol = new Author("Николай","Гоголь");
-        System.out.println("Автор - " + Gogol.getName() + " " + Gogol.getSurname());
-        Book Viy = new Book("Вий",Gogol,1834);
-        System.out.println("Название книги - " + Viy.getName());
-        System.out.println("Год издания - " + Viy.getYear());
-        Viy.setYear(1835);
-        System.out.println("Год издания - " + Viy.getYear());
+        Author gogol = new Author("Николай","Гоголь");
+        System.out.println("Автор - " + gogol.getName() + " " + gogol.getSurname());
+        Book viy = new Book("Вий",gogol,1834);
+        System.out.println("Название книги - " + viy.getName());
+        System.out.println("Год издания - " + viy.getYear());
+        viy.setYear(1835);
+        System.out.println("Год издания - " + viy.getYear());
         printSeparator();
-
-
     }
 
 
